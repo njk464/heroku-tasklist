@@ -1,29 +1,3 @@
-function MyLibrary () {
-	
-	function SuperCounter() 
-	{
-		
-	}
-	
-	Counter.prototype = new SuperCounter();
-	
-	function Counter()
-	{
-		this.count = 0;
-	}
-
-	Counter.prototype.increment = function()
-	{
-		this.count++;
-	}
-	
-	return {
-		Counter: Counter
-	}
-}
-
-
-
 $(document).ready(function() {
 	
 	var mylib = MyLibrary();
